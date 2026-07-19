@@ -2,10 +2,10 @@
 
 const About = () => {
   const highlights = [
-    'Full-stack development with modern frameworks',
-    'Cloud architecture and DevOps',
-    'Machine learning and AI integration',
-    'Research and academic contributions',
+    'Occupational Medicine & Environmental Health',
+    'Occupational Epidemiology',
+    'Workplace Health & Safety',
+    'Evidence-based Clinical Practice',
   ];
 
   return (
@@ -14,8 +14,8 @@ const About = () => {
         <div className="space-y-12">
           {/* Section Header */}
           <div>
-            <span className="text-cyan-400 text-sm font-semibold uppercase tracking-wider">About Me</span>
-            <h2 className="section-title text-gradient mt-2">Who I Am</h2>
+            <span className="text-teal-400 text-sm font-semibold uppercase tracking-wider">About</span>
+            <h2 className="section-title text-gradient mt-2">Professional Background</h2>
           </div>
 
           {/* About Content */}
@@ -23,30 +23,25 @@ const About = () => {
             {/* Main Text */}
             <div className="md:col-span-2 space-y-6">
               <p className="text-lg text-slate-300 leading-relaxed">
-                I'm a dedicated full-stack engineer with a passion for creating elegant solutions to complex
-                problems. With expertise spanning frontend, backend, and infrastructure, I specialize in building
-                scalable applications that make an impact.
+                I am an Occupational & Environmental Medicine Resident at Ramathibodi Hospital in Bangkok, Thailand. My clinical practice focuses on occupational health, workplace safety, and environmental medicine with an evidence-based approach.
               </p>
 
               <p className="text-lg text-slate-300 leading-relaxed">
-                Beyond coding, I'm deeply involved in academic research, contributing to publications in machine
-                learning and distributed systems. I believe in continuous learning and staying at the forefront of
-                technology trends.
+                Currently, I am pursuing a Master of Science in Occupational Health and Toxicology (International Program) at the Faculty of Medicine, Mahidol University, while maintaining clinical responsibilities in preventive and occupational medicine.
               </p>
 
               <p className="text-lg text-slate-300 leading-relaxed">
-                When I'm not coding, you can find me contributing to open-source projects, mentoring junior
-                developers, or exploring new technologies that could transform the industry.
+                My research interests center on occupational epidemiology and the health impacts of workplace exposures. I am committed to advancing occupational medicine through rigorous research and clinical excellence.
               </p>
             </div>
 
-            {/* Highlights */}
+            {/* Research Interests */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold mb-4">Specializations</h3>
+              <h3 className="text-xl font-semibold mb-4">Research Interests</h3>
               {highlights.map((highlight, index) => (
                 <div key={index} className="flex gap-3">
                   <svg
-                    className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-teal-400 flex-shrink-0 mt-0.5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >

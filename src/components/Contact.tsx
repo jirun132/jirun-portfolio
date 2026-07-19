@@ -9,6 +9,12 @@ const Contact = () => {
       icon: '✉️',
     },
     {
+      label: 'ORCID',
+      value: '0009-0002-0028-1204',
+      href: 'https://orcid.org/0009-0002-0028-1204',
+      icon: '🔗',
+    },
+    {
       label: 'GitHub',
       value: 'github.com/jirun132',
       href: 'https://github.com/jirun132',
@@ -20,12 +26,6 @@ const Contact = () => {
       href: 'https://linkedin.com/in/jirun',
       icon: '🔗',
     },
-    {
-      label: 'Website',
-      value: 'jirun.dev',
-      href: 'https://jirun.dev',
-      icon: '🌐',
-    },
   ];
 
   return (
@@ -34,10 +34,10 @@ const Contact = () => {
         <div className="space-y-12">
           {/* Section Header */}
           <div className="text-center space-y-4">
-            <span className="text-cyan-400 text-sm font-semibold uppercase tracking-wider">Get In Touch</span>
-            <h2 className="section-title text-gradient">Let's Work Together</h2>
+            <span className="text-teal-400 text-sm font-semibold uppercase tracking-wider">Get In Touch</span>
+            <h2 className="section-title text-gradient">Connect</h2>
             <p className="section-subtitle text-center">
-              I'm always interested in hearing about new projects and opportunities.
+              Interested in collaboration, research opportunities, or clinical consultation? Feel free to reach out.
             </p>
           </div>
 
@@ -52,9 +52,9 @@ const Contact = () => {
                 className="glass p-6 hover:shadow-glow-lg transition-all duration-300 hover:translate-y-1 group"
               >
                 <div className="flex items-start gap-4">
-                  <span className="text-4xl">{contact.icon}</span>
+                  <span className="text-4xl group-hover:scale-125 transition-transform duration-300">{contact.icon}</span>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-slate-50 group-hover:text-cyan-400 transition-colors">
+                    <h3 className="font-semibold text-slate-50 group-hover:text-teal-400 transition-colors">
                       {contact.label}
                     </h3>
                     <p className="text-slate-400 text-sm break-all">{contact.value}</p>
@@ -66,7 +66,7 @@ const Contact = () => {
 
           {/* CTA */}
           <div className="text-center pt-8">
-            <p className="text-slate-400 mb-4">Or reach out directly:</p>
+            <p className="text-slate-400 mb-4">Prefer email?</p>
             <a href="mailto:jirun.pon@gmail.com" className="btn-primary inline-block">
               Send an Email
             </a>
