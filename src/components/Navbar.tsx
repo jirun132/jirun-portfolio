@@ -20,9 +20,9 @@ const Navbar = () => {
     { label: 'About', href: '#about' },
     { label: 'Experience', href: '#experience' },
     { label: 'Education', href: '#education' },
-    { label: 'Skills', href: '#skills' },
+    { label: 'Research', href: '#research' },
     { label: 'Publications', href: '#publications' },
-    { label: 'Projects', href: '#projects' },
+    { label: 'Skills', href: '#skills' },
   ];
 
   return (
@@ -44,7 +44,7 @@ const Navbar = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors duration-200"
+                className="text-sm font-medium text-slate-300 hover:text-teal-400 transition-colors duration-200"
               >
                 {item.label}
               </a>
@@ -61,7 +61,8 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-slate-300 hover:text-cyan-400"
+            className="md:hidden p-2 text-slate-300 hover:text-teal-400"
+            aria-label="Toggle navigation menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -76,7 +77,7 @@ const Navbar = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="block px-2 py-2 text-sm text-slate-300 hover:text-cyan-400 transition-colors"
+                className="block px-2 py-2 text-sm text-slate-300 hover:text-teal-400 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.label}
